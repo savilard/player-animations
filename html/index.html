@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
-    <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+  <link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-    <script async src="https://use.fontawesome.com/8470f9ddec.js"></script>
+  <script async src="https://use.fontawesome.com/8470f9ddec.js"></script>
 
-    <title>Player</title>
-    <style>
-        .player-button {
-            border-style: none;
-            color: white;
-            background-color: transparent;
-            padding: 10px;
-            height: 50px;
-            width: 50px;
-        }
+  <title>Player</title>
+  <style>
+    .player-button {
+      border-style: none;
+      color: white;
+      background-color: transparent;
+      padding: 10px;
+      height: 50px;
+      width: 50px;
+    }
 
-        .player {
-            width: 800px;
-            height: 600px;
-            box-shadow: 0 0 25px rgba(0, 0, 0, 20);
-            display: flex;
-            flex-direction: column;
-        }
+    .player {
+      width: 800px;
+      height: 600px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 20);
+      display: flex;
+      flex-direction: column;
+    }
 
-        .video-container {
-            flex-grow: 1;
-        }
+    .video-container {
+      flex-grow: 1;
+    }
 
-        .player-buttons-bar {
-            background: black;
-            display: flex;
-        }
+    .player-buttons-bar {
+      background: black;
+      display: flex;
+    }
 
-        .player-buttons-separator {
-            flex-grow: 1;
-        }
-    </style>
+    .player-buttons-separator {
+      flex-grow: 1;
+    }
+  </style>
 </head>
 <body>
 <div id="player" class="player">
-    <div class="js-video-container video-container"></div>
-    <div class="player-buttons-bar">
-        <button class="js-play-button player-button"><i class="fa fa-play" aria-hidden="true"></i></button>
-        <button class="js-pause-button player-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
-        <button class="js-mute-button player-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
-        <button class="js-volume-button player-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i>
-        </button>
-        <div class="player-buttons-separator"></div>
-        <button class="js-fullscreen-button player-button"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button>
-    </div>
+  <div class="js-video-container video-container"></div>
+  <div class="player-buttons-bar">
+    <button class="js-play-button player-button"><i class="fa fa-play" aria-hidden="true"></i></button>
+    <button class="js-pause-button player-button" hidden><i class="fa fa-pause" aria-hidden="true"></i></button>
+    <button class="js-mute-button player-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
+    <button class="js-volume-button player-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i>
+    </button>
+    <div class="player-buttons-separator"></div>
+    <button class="js-fullscreen-button player-button"><i class="fa fa-arrows-alt" aria-hidden="true"></i></button>
+  </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -64,7 +64,7 @@
 <script src="js/player.js"></script>
 
 <script>
-    createPlayer({elementId: 'player'});
+  createPlayer({elementId: 'player'});
 </script>
 
 </body>
