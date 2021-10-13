@@ -1,0 +1,60 @@
+.player {
+  width: 800px;
+  height: 600px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 20);
+  display: flex;
+  flex-direction: column;
+}
+
+.screen {
+  flex-grow: 1;
+}
+
+.player .bottom-controls {
+  background: black;
+  display: flex;
+}
+
+.player .player-button {
+  border-style: none;
+  color: white;
+  background-color: transparent;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+}
+
+.player .player-button.play {
+  margin: 7px 0 0 3px;
+}
+
+.player .player-button.volume {
+  margin: 0 0 0 3px;
+}
+
+.player .player-button.fullscreen {
+  margin: 7px 4px 0 2px;
+}
+
+
+.player .bottom-controls .viewing-panel {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-grow: 1;
+  margin-top: 13px;
+  padding-left: 2px;
+  margin-right: 4px;
+}
+
+.player .bottom-controls .viewing-panel .viewing-progressbar {
+  flex-grow: 1;
+}
+
+.player .bottom-controls .viewing-panel .viewing-time {
+  margin: 0 0 0 2px;
+}
+
+.player .bottom-controls .viewing-panel .video-duration {
+  margin: 0 -3px 12px 0;
+}
