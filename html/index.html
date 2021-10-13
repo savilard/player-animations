@@ -10,6 +10,10 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
   <script async src="https://use.fontawesome.com/8470f9ddec.js"></script>
 
   <title>Player</title>
@@ -36,6 +40,10 @@
       flex-grow: 1;
     }
 
+    .video-time {
+      font-family: 'Roboto', sans-serif;
+    }
+
     .player-buttons-bar {
       background: black;
       display: flex;
@@ -55,7 +63,7 @@
     <button class="js-mute-button player-button"><i class="fa fa-volume-up" aria-hidden="true"></i></button>
     <button class="js-volume-button player-button" hidden><i class="fa fa-volume-off" aria-hidden="true"></i>
     </button>
-    <div style="color: white;">
+    <div class="video-time" style="color: white;">
       <span class="js-current-time"></span>
       —
       <span class="js-duration"></span>
