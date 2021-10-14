@@ -25,15 +25,15 @@
 }
 
 .player .player-button.play {
-  margin: 7px 0 0 3px;
+  margin: 6px 0 7px 3px;
 }
 
 .player .player-button.volume {
-  margin: 0 0 0 3px;
+  margin: 6px 0 7px 3px;
 }
 
 .player .player-button.fullscreen {
-  margin: 7px 4px 0 2px;
+  margin: 6px 4px 7px 3px;
 }
 
 
@@ -42,19 +42,16 @@
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-grow: 1;
-  margin-top: 13px;
-  padding-left: 2px;
-  margin-right: 4px;
+  margin: 0 0 0 4px;
 }
 
 .player .bottom-controls .viewing-panel .viewing-progressbar {
   flex-grow: 1;
+  margin: 0 10px 0 10px;
 }
 
-.player .bottom-controls .viewing-panel .viewing-time {
-  margin: 0 0 0 2px;
-}
-
-.player .bottom-controls .viewing-panel .video-duration {
-  margin: 0 -3px 12px 0;
+.player .bottom-controls .viewing-panel .progressbar-slider {
+  background-color: red;
+  height: 5px;
+  border-radius: 5px;
 }
